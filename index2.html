@@ -1,0 +1,31 @@
+---
+
+---
+
+<!--Version 2 of LinkedIn Dashboard Page
+- Copy html from index.html (version 1 of LinkedIn)
+-->
+
+<!DOCTYPE html>
+<html>
+
+  <!--This include tag adds /_includes/head.html to every page that has layout: default in the front matter -->
+
+  {% include head2.html %}
+
+  <body>
+    
+    <!--This include tag adds /_includes/header.html to every page that has layout: default in the front matter -->
+    {% include header.html %}
+
+      <div class="wrapper">
+        <!--Any content underneath the front matter in a page that has layout: default will be inserted here-->
+        {{ content }}
+      </div>
+    
+    <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
+    {% include footer.html %}
+
+  </body>
+
+</html>
