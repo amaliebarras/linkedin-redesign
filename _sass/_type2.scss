@@ -1,15 +1,61 @@
+@import 'colors2';
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
+	font-family: 'Bitter';
+	color: $primary-color-dark;
+	font-weight: normal;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
+	font-family: 'Bitter';
+	color: $primary-color-dark;
+	font-weight: normal;
 }
 
 h3 {
+	margin: 2em 0em;
+	font-size: 1.25em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: $primary-color-medium;
+}
+
+h4 {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: $lightest-color;
+}
+
+
+h5 {
+	font-size: 0.75em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h6 {
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
 	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color-medium;
 }

@@ -1,23 +1,279 @@
 ---
 layout: default
 ---
+<div class = "wholething column-12">
 
-<div class="home">
+    <div class = "lefthalf column-12">
 
-  <h1 class="page-heading">Posts</h1>
+      <div class="row">
+        <div class = "profile column-6">
+          <a href = "#">
+            <img src = "images/PortfolioAboutPic.png" class ="profpic">
+          </a>
+            <h1>Amalie Barras</h1>
+            <h3> UI Design Student | the Iron Yard </h3>
+            <p>Your profile was viewed
+            <span><a href ="#">7 times </a></span>
+            <br>and you showed up in search <span><a href ="#">29 times</a></span> <br>since your last visit. </p>
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class = "share column-6">
+          <h2>Share</h2>
+          <div class = "row tabs-wrapper">
+            <a href = "#">
+              <div class ="tab column-2">
+              <p>Ask</p>
+              </div>
+            </a>
+            <a href = "#">
+              <div class ="tab column-2">
+              <p>Attach</p>
+              </div>
+            </a>
+            <a href = "#">
+              <div class ="tab column-2">
+              <p>Tell</p>
+              </div>
+            </a>
+          </div>
+          <input class = "row text-box" placeholder ="What do you like about this article?">
+          <div class = "row linknshare">
+            <span class = "link">
+              <span class = "icon">
+                <i class="fa fa-reddit-alien"></i>
+              </span>
+              <span class = "text"> 
+                <p>Awesome Helpful Thread</p>
+                <h6>REDDIT.COM</h6>
+              </span>
+            </span>
+            <span class="post">
+                  Post
+            </span>
+          </div>
+        </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div class = "updates column-6">
+          <h2>Updates</h2>
+          <div class = "row update">
+            <span class = "iconnytextwrapper">
+              <span class = "icon">
+                  <i class="fa fa-trophy"></i>
+              </span>
+              <span class = "text"> 
+                <p>Alex just got a new job as Sales Manager at Oracle! Tell him Congrats!</p>
+              </span>
+            </span>
+          </div>
+          <div class = "row update">
+            <span class = "iconnytextwrapper">
+              <span class = "icon">
+                  <i class="fa fa-question"></i>
+              </span>
+              <span class = "text"> 
+                <p>David asked a question, “Does anyone even 
+                dress up for interviews anymore?”</p>
+              </span>
+            </span>
+          </div>
+          <div class = "row update">
+            <span class = "iconnytextwrapper">
+              <span class = "icon">
+                  <i class="fa fa-link"></i>
+              </span>
+              <span class = "text"> 
+                <p>Jennifer just posted this link, “Seriously 
+                wouldn’t have gotten my last job without 
+            this.”</p>
+              </span>
+            </span>
+          </div>
+          <a href = "#"><div class = "row loadmore">
+            <p> Load more updates...</p>
+          </div>
+          </a>
+        </div>
+      </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
 
-</div>
+    <div class = "explore column-6 righthalf">
+    <h2>Explore</h2>
+      <h3>Jobs </h3>
+      <div class = "row jobs">
+        <div class = "row firstrow">
+          <div class = "firstcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+          <div class = "secondcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+          <div class = "thirdcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class = "row secondrow">
+          <div class = "firstcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+          <div class = "secondcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+          <div class = "thirdcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "target" src = "/images/target.png">
+              <p>
+              Cashier<br>
+              <span>Target</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href = #>
+          <div class = "button">
+            <h4>More Jobs </h4>
+          </div>
+        </a>
+      </div>
+      <h3>People you may know </h3>
+      <div class = "row pplyouknow">
+       <div class = "row firstrow">
+          <div class = "firstcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+              <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+          <div class = "secondcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+              <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+          <div class = "thirdcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+             <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class = "row secondrow">
+          <div class = "firstcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+              <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+          <div class = "secondcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+              <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+          <div class = "thirdcolumn column-2">
+            <div class = "tile-wrapper">
+              <img class = "nophoto" src = "/images/nophoto.png">
+              <p>
+              Firstname<br>
+              Lastname
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href = #>
+          <div class = "button">
+            <h4>More People You May Know </h4>
+          </div>
+        </a>
+      </div>
+      <div class = "row groups">
+        <h3>Groups</h3>
+        <div class = "group">
+          <span class = "iconnytextwrapper">
+            <span class = "icon">
+                <img src = "/images/ga.png">
+            </span>
+            <span class = "text"> 
+              <p><b>Google Analytics</b>
+              <p>10 new conversations today</p>
+            </span>
+          </span>
+        </div>
+        <div class = "group extragroups">
+          <span class = "iconnytextwrapper">
+            <span class = "icon">
+               <img src = "/images/ga.png">
+            </span>
+            <span class = "text"> 
+              <p><b>Google Analytics</b>
+              <p>10 new conversations today</p>
+            </span>
+          </span>
+        </div>
+        <div class = "group extragroups">
+          <span class = "iconnytextwrapper">
+            <span class = "icon">
+                <img src = "/images/ga.png">
+            </span>
+            <span class = "text"> 
+               <p><b>Google Analytics</b>
+              <p>10 new conversations today</p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <a href = #>
+        <div class = "button">
+          <h4>More Groups </h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
