@@ -110,7 +110,7 @@
 
 .nav-link {
 	display: none;
-	margin: 0 0.5em;
+	width: 14%;
 	text-align: center;
 }
 
@@ -143,25 +143,26 @@
 }
 
 .search-wrapper {
-	margin: 0.75em 1em;
-}
+	margin-top: -2.25em;
+	input {
+		height: 2.5rem;
+		width: 60%;
+		border: solid 1px $secondary-color-dark; 
+		box-sizing: border-box;
+	}
 
-input {
-	height: 2.5rem;
-	width: 60%;
-	border: solid 1px $secondary-color-dark; 
+	button.search {
+		width: 30%;
+		min-width: 6rem;
+		padding: 0.45em;
+		background-color: $primary-color-dark;
+		color: $lightest-color;
+		border: 0;
+			&:hover {
+			background-color: $secondary-color-dark;
+		}
+	}
 }
-
-.search {
-	width: 30%;
-	min-width: 6rem;
-	padding: 0.4em;
-	background-color: $primary-color-dark;
-	color: $lightest-color;
-	border: 0;
-	border-radius: 0px 4px 4px 0px;
-}
-
 .profile {
 	text-align: center;
 	margin: 3em 2em;
@@ -188,9 +189,12 @@ input {
 
 .share {
 	margin: 0em 2em;
-	input {
+	textarea {
+	padding: 0.5em;
+	color: $primary-color-medium;
+	box-sizing: border-box;
 	height: 6em;
-	width: 98%;
+	width: 97.5%;
 	border: solid 1px $secondary-color-dark;
 	}
 	.tab {
@@ -206,7 +210,6 @@ input {
 			}
 		width: 32%;
 		text-align: center;
-		border-radius: 4px 4px 0px 0px; 
 		p {
 			color: $lightest-color;
 		}	
@@ -236,8 +239,10 @@ input {
 			color: $lightest-color;
 			margin-right: 0.5em;
 			padding: 1em 1.5em;
-			border-radius: 4px;
 			background-color: $primary-color-medium;
+			&:hover {
+			background-color: $primary-color-dark;
+		}
 		}
 	}
 }
@@ -254,6 +259,14 @@ input {
 		margin: 0em 0em 0.5em 0em;
 		clear: both;
 		}
+	.update {
+	border: solid 1px $light-color;
+	padding: 1em;
+	border-radius: 4px;
+	}
+	.hide {
+		display: none;
+	}
 	i {		
 		font-size: 3em;
 		color: $primary-color-dark;
@@ -270,7 +283,6 @@ input {
 
 	.loadmore {
 	margin: 2em auto;
-	border-radius: 4px;
 	background-color: $lightest-color;
 	text-align: center;
 		.tile-wrapper {
@@ -288,16 +300,15 @@ input {
 }
 
 .explore {
-	margin: 0em 2em 7em 2em; 
+	margin: 2em 2em 7em 2em; 
 	text-align: left;
 }
 
 .button {
 	background-color: $secondary-color-dark;
-	border-radius: 4px;
 	padding: 1px 2em;
 	margin: 2em auto 2em auto;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	&:hover {
 		background-color: $primary-color-medium;
@@ -434,7 +445,6 @@ footer {
 		}
 		.button {
 			margin: 0em auto 0.5em auto;
-			height: 2em;
 			padding: 0.25em;
 			h4 {
 				margin-top: 0.5em;

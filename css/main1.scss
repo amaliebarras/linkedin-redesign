@@ -106,7 +106,7 @@
 
 .nav-link {
 	display: none;
-	margin: 0 0.5em;
+	width: 1%;
 	text-align: center;
 }
 
@@ -139,28 +139,29 @@
 }
 
 .search-wrapper {
-	margin: 0.75em 1em;
-}
-
-input {
-	height: 2.5rem;
-	width: 60%;
-	border: solid 1px $secondary-color-dark; 
-}
-
-.search {
-	width: 30%;
-	min-width: 6rem;
-	height: 2.5rem;
-	background-color: $primary-color-medium;
-	color: $lightest-color;
-	border: 0;
-	border-radius: 0px 4px 4px 0px;
+	input {
+		height: 2.5rem;
+		width: 60%;
+		border: solid 1px $secondary-color-dark; 
+	}
+	button.search {
+		width: 30%;
+		min-width: 6rem;
+		padding: 0.45em;
+		margin-top: 0.55em;
+		background-color: $primary-color-medium;
+		color: $lightest-color;
+		border: 0;
+		border-radius: 0px 4px 4px 0px;
+			&:hover {
+			background-color: $primary-color-dark;
+		}
+	}
 }
 
 .profile {
 	text-align: center;
-	margin: 3em 2em;
+	margin: 7em 2em 3em 2em;
 	border-bottom: 1px solid $secondary-color-dark;
 	h1, h3 {
 	margin: 0;
@@ -184,11 +185,14 @@ input {
 
 .share {
 	margin: 0em 2em;
-	input {
-	height: 6em;
-	width: 98%;
-	border: solid 1px $secondary-color-dark;
-	}
+	textarea {
+		padding: 0.5em;
+		color: $light-color;
+		box-sizing: border-box;
+		height: 6em;
+		width: 97.5%;
+		border: solid 1px $secondary-color-dark;
+		}
 	.tab {
 		display: inline-block;
 		height: 3em;
@@ -211,9 +215,10 @@ input {
 	.linknshare {
 		.link {
 			float: right;
-			margin: 0.5em;
+			margin: 0 0.75em 0.5em 0;
 			padding: 0.5em 1em;
 			border: 1px solid $light-color;
+			border-radius: 4px;
 			span {
 				display: inline-block;
 				i {
@@ -230,16 +235,22 @@ input {
 			float: right;
 			clear: both;
 			color: $lightest-color;
-			margin-right: 0.5em;
+			margin: 0 0.75em 0.5em 0;
 			padding: 1em 1.5em;
 			border-radius: 4px;
 			background-color: $primary-color-medium;
+			&:hover {
+				background-color: $primary-color-dark;
+			}
 		}
 	}
 }
 
 .updates {
 	margin: 0em 2em;
+	.hide {
+		display: none;
+	}
 }
 
 .updates, .groups {
@@ -250,14 +261,19 @@ input {
 		margin: 0em 0em 0.5em 0em;
 		clear: both;
 		}
+	.update {
+		border: solid 1px $light-color;
+		padding: 1em;
+		border-radius: 4px;
+	}
 	i {		
-		font-size: 3em;
+		font-size: 2em;
 		color: $primary-color-dark;
 		margin-right: 0em;
 		float: left;
 	}
 	.text p {
-		width: 80%;
+		width: 90%;
 		float: right;
 		padding: 0;
 		margin: 0;
@@ -284,7 +300,7 @@ input {
 }
 
 .explore {
-	margin: 0em 2em 7em 2em; 
+	margin: 2em 2em 7em 2em; 
 	text-align: left;
 }
 
@@ -293,7 +309,7 @@ input {
 	border-radius: 4px;
 	padding: 1px 2em;
 	margin: 2em auto 2em auto;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	&:hover {
 		background-color: $primary-color-dark;
@@ -301,17 +317,18 @@ input {
 }
 
 .jobs {
+	margin: 0.5em;
 	background-color: $lightest-color;
 	.tile-wrapper  {
 		text-align: center;
-		margin: auto;
+		margin: 0.5em auto;
 	}
 }
 
 .firstrow, .secondrow {
 	.column-2 {
 	width: 25%;
-	margin: 0.5em;
+	margin: 0 0.5em 0em 0.5em;
 	display: inline;
 	float: left;
 		div {
@@ -326,7 +343,7 @@ input {
 					margin: 0;
 					text-transform: uppercase;
 					font-size: 0.75em;
-					line-height: 0.75em;
+					line-height: 0.25em;
 				}
 			}		
 		}
@@ -335,8 +352,13 @@ input {
 
 .pplyouknow {
 	.tile-wrapper  {
+		margin: 0.25em 0em;
 		text-align: center;
 	}
+	p {
+			font-size: 0.75em;
+			line-height: 1.05em;
+		}
 	.nophoto {
 		text-align: center;
 	}
@@ -352,7 +374,7 @@ input {
 		height: 3em;
 		width: 3em;
 		float: left;
-		margin: 1em 0em;
+		margin: 0.5em 0em;
 	}
 	.text {
 		width: 80%;
@@ -395,12 +417,15 @@ footer {
 		display: inline-block;
 	}
 
+	.profile {
+		margin-top: 4em;
+	}
+
 	.lefthalf {
 		margin: 4em 0em;
 		float: left;
 		display: inline-block;
 	}
-
 	.righthalf {
 		margin-top: 4em;
 		margin-right: 0em;
@@ -416,20 +441,12 @@ footer {
 		float: right;
 		padding: 0em 2em;
 		box-sizing: border-box;
-		border-left: solid 1px $light-color;
 		background-color:rgba(17, 46, 81, 0.1);
-		h2 {
-			margin: 0.4em 0em;
-		}
-		h3 {
-			margin: 0em 0em;
-		}
 		p {
 			line-height: 1.25em;
 		}
 		.button {
 			margin: 0em auto 0.5em auto;
-			height: 2em;
 			padding: 0.25em;
 			h4 {
 				margin-top: 0.5em;
@@ -450,6 +467,7 @@ footer {
 @media only screen and (min-width: 960px) {
 	.nav-link {
 	display: inline-block;
+	width: 16%;
 	}
 
 	.header-left {
@@ -462,14 +480,6 @@ footer {
 		width: 45%;
 	}
 
-	.righthalf {
-		h2 {
-		margin-bottom: 0em;
-		}
-		h3 {
-		margin-top: 1.25em;
-		}
-	}
 
 	footer {
 		display: none;
