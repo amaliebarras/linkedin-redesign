@@ -2,7 +2,7 @@
 
 ##Site Map
 
-* Home
+* Home 
 * Profile
 	* Edit Profile
 	* Who's Viewed Your Profile
