@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 .row,
 .column {
   box-sizing: border-box;
@@ -430,7 +431,7 @@ footer {
 		margin-top: 4em;
 		margin-right: 0em;
    		position:fixed; 
-   		overflow: hidden;
+   		overflow: scroll;
     	z-index:1;
     	top:0; right:0;
     	width:35%;

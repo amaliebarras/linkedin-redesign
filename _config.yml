@@ -9,10 +9,13 @@
 title: LinkedIn Redesign
 email: hello@amaliebarras.com
 description: > # LinkedIn Web App Redesign project for the Iron Yard UI Design course
-baseurl: "/linkedin-redesign/" # the subpath of your site, e.g. /blog
+baseurl: "/linkedin-redesign" # the subpath of your site, e.g. /blog
 url: "amaliebarras.github.io" # the base hostname & protocol for your site
 twitter_username: amaliebarras
 github_username:  amaliebarras
 
+
+
 sass:
-    sass_dir: css/_sass
+    sass_dir: _sass
+    css_dir: css
